@@ -1,5 +1,5 @@
-# Rockbuster-Stealth-LLC
-Rockbuster Stealth Data Analysis Project 
+## Rockbuster-Stealth-LLC
+# Rockbuster Stealth Data Analysis Project 
 
 •	The goal of this analysis was to work with the business intelligence department to inform the launch of Rockbuster’s new online service.  
 •	The data set contains information about Rockbuster’s film inventory, customers and payments.   
