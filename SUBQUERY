@@ -24,3 +24,4 @@ FROM
          E.country
  ORDER BY (total_amount_paid) DESC
  LIMIT 5) AS average
+
