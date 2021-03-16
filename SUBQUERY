@@ -1,4 +1,4 @@
-Here is a SQL query using a SUBQUERY to find the average amount spent by the top 5 Rockbuster customers in the top 10 cities.
+Here is an SQL query, using a SUBQUERY, to find the average amount spent by the top 5 Rockbuster customers in the top 10 cities.
 
 SELECT AVG (total_amount_paid)
 FROM
