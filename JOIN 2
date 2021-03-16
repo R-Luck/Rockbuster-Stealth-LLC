@@ -1,7 +1,7 @@
 Here is an SQL query, using a JOIN, to find the sales count by film category
 
 SELECT E.name,
-COUNT (amount) AS transactions_per_category
+       COUNT (amount) AS transactions_per_category
 FROM payment A
 INNER JOIN rental B ON A.rental_id = B.rental_id
 INNER JOIN inventory C ON B.inventory_id = C.inventory_id
