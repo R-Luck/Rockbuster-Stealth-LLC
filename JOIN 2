@@ -9,3 +9,5 @@ INNER JOIN film_category D ON C.film_id = D.film_id
 INNER JOIN category E ON D.category_id = E.category_id
 GROUP BY E.name
 ORDER BY transactions_per_category DESC
+
+
