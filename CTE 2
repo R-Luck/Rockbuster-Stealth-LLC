@@ -24,8 +24,8 @@ WITH top_five_customers_cte (amount,customer_id,first_name,last_name,city,countr
  ORDER BY (total_amount_paid) DESC
  LIMIT 5) 
  
- SELECT AVG (total_amount_paid)
- FROM top_five_customers_cte
+SELECT AVG (total_amount_paid)
+FROM top_five_customers_cte
  
  
  
