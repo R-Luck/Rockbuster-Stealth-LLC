@@ -1,0 +1,17 @@
+Here is an SQL query, using a CTE, to find the count of films in each category when looked at by rating.
+
+WITH category_name_cte (film_id, rating, category_name) AS
+  (SELECT A.film_id,
+          A.rating,
+          C.name
+   FROM film A
+   LEFT JOIN film_category B ON A.film_id = B.film_id
+   LEFT JOIN category C ON B.category_id = C.category_id)
+SELECT rating,
+       category_name,
+       COUNT (film_id) AS counts
+FROM category_name_cte
+GROUP BY rating,
+         category_name
+ORDER BY rating,
+         counts DESC
