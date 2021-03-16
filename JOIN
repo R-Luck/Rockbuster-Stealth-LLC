@@ -1,14 +1,12 @@
-Here is an SQL query, using a JOIN, to find the top 10 countries where Rockbuster customers are based
+Here is an SQL query, using a JOIN, to find Rockbuster inventory by film category.
 
-SELECT D.country,
-C.city,
-COUNT (customer_id) AS count_of_customers
-FROM customer A
-INNER JOIN address B ON A.address_id = B.address_id
-INNER JOIN city C ON B.city_id = C.city_id
-INNER JOIN country D ON C.country_id = D.country_id
-WHERE country IN ('India','China','United States','Japan','Mexico','Brazil','Russian Federation','Philippines','Turkey','Indonesia')
-GROUP BY D.country,
-C.city
-ORDER BY count_of_customers DESC
-LIMIT 10
+SELECT C.category_id,
+C.name,
+COUNT (inventory_id) AS inventory_of_film
+FROM inventory A
+LEFT JOIN film_category B ON A.film_id = B.film_id
+LEFT JOIN category C ON B.category_id = C.category_id
+GROUP BY C.category_id,
+C.name
+ORDER BY inventory_of_film DESC
+
