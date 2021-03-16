@@ -36,3 +36,5 @@ ON E.country = top_five_customers.country
 GROUP BY E.country
 ORDER BY top_five_customers DESC
 LIMIT 10
+
+
