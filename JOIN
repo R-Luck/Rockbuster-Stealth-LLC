@@ -1,4 +1,4 @@
-Here is an SQL query using a JOIN to find the top 10 countries where Rockbuster customers are based
+Here is an SQL query, using a JOIN, to find the top 10 countries where Rockbuster customers are based
 
 SELECT D.country,
 C.city,
