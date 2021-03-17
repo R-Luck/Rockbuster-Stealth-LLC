@@ -9,5 +9,6 @@ INNER JOIN city C ON B.city_id = C.city_id
 INNER JOIN country D ON C.country_ID = D.country_ID
 INNER JOIN payment E ON A.customer_id = E.customer_id
 GROUP BY country
+ORDER BY total_payment DESC
 
 
