@@ -6,6 +6,6 @@
 
 •	SQL queries were written to analyse the data and answer ad hoc business questions.          
 
-•	The data set contains information about Rockbuster’s film inventory, customers and payments.   
+•	The data set contains information about Rockbuster’s film inventory, customers and payments, see Rockbuster Data Dictionary.  
 
 •	The results from this analysis were presented in a [Tableau Presentation](https://public.tableau.com/profile/rebecca3609#!/vizhome/RockbusterStealthLLC/RockbusterStealthLLC)  
